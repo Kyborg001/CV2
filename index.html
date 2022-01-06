@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      rel="stylesheet"
+    />
+
+    <title>Резюме</title>
+  </head>
+  <body style="background-color:antiquewhite">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Резюме</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+
+          <ul class="nav__list">
+
+            <li class="nav__item">
+
+              <a href="#home" class="nav__link active">Домой</a>
+              
+            </li>
+            <li class="nav__item">
+              <a href="#Chi_sono" class="nav__link">О себе</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#Contattami" class="nav__link">Связаться со мной</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Всем привет, я<br />
+            <span class="home__title-color">Бейшенбеков Альмир</span><br />
+        Графический дизайнер
+          </h1>
+
+        
+        </div>
+
+        <div class="home__social">
+          <a href="https://www.behance.net/7c145bec" class="home__social-icon"
+            ><i class="bx bxl-google"></i
+          ></a>
+          <a href="https://it.linkedin.com/" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Ciborg001" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <div class="home__img">
+          <img id="myPhoto" onclick="changePhoto()"  src="11.jpg" alt="" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="Chi_sono">
+        <h2 class="section-title">О себе</h2>
+
+    
+          <div>
+            <h2 class="about__subtitle">Привет, я Бейшенбеков Альмир</h2>
+            <p class="about__text">
+              Я графический дизайнер и я разрабатываю веб-сайты.
+              Доступно множество вариаций отрывков Lorem Ipsum, но большинство из них претерпело 
+              изменения в той или иной форме из-за добавленного юмора или случайных слов,
+               которые даже немного не выглядят правдоподобными. 
+              Если вы собираетесь использовать отрывок из Lorem Ipsum, вы должны быть уверены,
+               что в середине текста нет ничего смущающего.
+               Все генераторы Lorem Ipsum в Интернете имеют тенденцию повторять заранее определенные блоки по мере необходимости,
+                что делает его первым настоящим генератором в Интернете. 
+               Он использует словарь из более чем 200 латинских слов в сочетании с несколькими модельными структурами предложений,
+                чтобы создать Lorem Ipsum, который выглядит разумным. 
+              Таким образом, сгенерированный Lorem Ipsum всегда свободен от повторов, добавленного юмора, нехарактерных слов и т. Д.
+            </p>
+          </div>
+        </div>
+      </section>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Это мои навыки:</h2>
+            <p class="skills__text">
+              Умение в HTML5 = Средний <br />
+              Умение в CSS = средний-высокий <br />
+              Умение в JAVASCRIPT = низкий <br />
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== Работы =====-->
+      <section class="work section" id="Lavoro">
+        <h2 class="section-title">Работы</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+          <img src="22.png" alt="1">
+
+          <img src="33.png" alt="2">
+        </div>
+        </div>
+      </section>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              type="text"
+              placeholder="Message"
+              class="contact__input"
+            ></textarea>
+            <input type="button" value="Send" class="contact__button button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+        var myWidth = 250;
+
+        function changePhoto(){
+            var myPhoto = document.getElementById('myPhoto');
+            console.log("start:");
+            console.log(myPhoto);
+            myPhoto.setAttribute('src','22.png');
+            myPhoto.setAttribute('width' , myWidth +'px');
+            myWidth += 50;
+            console.log("end:");
+            console.log(myPhoto);
+            console.log();
+            
+        }
+    </script>
+
+  </body>
+</html>
